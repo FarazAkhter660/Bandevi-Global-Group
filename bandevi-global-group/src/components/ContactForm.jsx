@@ -17,13 +17,15 @@ export default function ContactForm() {
       <div className="form-row">
         <label>
           Your name *
-          <input name="name" required placeholder="Enter your name" />
+          <input name="name" autoComplete="name" maxLength={100} required placeholder="Enter your name" />
         </label>
         <label>
           Email address *
           <input
             name="email"
             type="email"
+            autoComplete="email"
+            maxLength={254}
             required
             placeholder="you@company.com"
           />
@@ -32,7 +34,7 @@ export default function ContactForm() {
       <div className="form-row">
         <label>
           Company
-          <input name="company" placeholder="Company name" />
+          <input name="company" autoComplete="organization" maxLength={120} placeholder="Company name" />
         </label>
         <label>
           Service needed *
@@ -53,16 +55,17 @@ export default function ContactForm() {
         <textarea
           name="message"
           rows="5"
+          maxLength={3000}
           required
           placeholder="What would you like to build or improve?"
         />
       </label>
       <button className="button button-primary" type="submit">
-        Prepare enquiry <ArrowRight size={18} />
+        Open email draft <ArrowRight size={18} />
       </button>
       <p className="form-hint">
         {prepared
-          ? "Your email application should open with the enquiry prepared."
+          ? "If your email app did not open, email sales@bandeviglobalgroup.com with your enquiry."
           : "This frontend form prepares an email. A backend connection is required for direct submission."}
       </p>
     </form>
