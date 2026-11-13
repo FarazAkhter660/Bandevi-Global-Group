@@ -1,14 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  Mail,
-  MapPin,
-  Phone,
-  Linkedin,
-  Instagram,
-  Facebook,
-} from "lucide-react";
+import { Mail, MapPin, Phone, MessageCircle } from "lucide-react";
 import Logo from "./Logo";
+
 export default function Footer() {
   return (
     <footer className="site-footer">
@@ -16,17 +10,15 @@ export default function Footer() {
         <div className="footer-about">
           <Logo light />
           <p>
-            Websites, CRM, ERP and travel technology built around your business.
+            Websites, business applications, CRM, ERP and travel technology
+            shaped around the way your organisation works.
           </p>
           <div className="social-links">
-            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
-              <Linkedin />
+            <a href="https://wa.me/917011040474" target="_blank" rel="noreferrer" aria-label="Contact Bandevi on WhatsApp">
+              <MessageCircle />
             </a>
-            <a href="https://www.instagram.com/" aria-label="Instagram">
-              <Instagram />
-            </a>
-            <a href="https://www.facebook.com/" aria-label="Facebook">
-              <Facebook />
+            <a href="mailto:sales@bandeviglobalgroup.com" aria-label="Email Bandevi">
+              <Mail />
             </a>
           </div>
         </div>
@@ -49,39 +41,21 @@ export default function Footer() {
         </div>
         <div className="footer-contact">
           <h4>Contact</h4>
-          <a href="tel:+917011040474">
-            <Phone />
-            +91 70110 40474
-          </a>
-          <a href="mailto:sales@bandeviglobalgroup.com">
-            <Mail />
-            sales@bandeviglobalgroup.com
-          </a>
-          <p>
-            <MapPin />
-            SCO 63, Huda Market, Sector 23A, Gurugram, Haryana 122017
-          </p>
+          <a href="tel:+917011040474"><Phone />+91 70110 40474</a>
+          <a href="mailto:sales@bandeviglobalgroup.com"><Mail />sales@bandeviglobalgroup.com</a>
+          <p><MapPin />SCO 63, Huda Market, Sector 23A, Gurugram, Haryana 122017</p>
         </div>
-        <div>
-          <h4>Business regions</h4>
-          <span>🇮🇳 India (INR)</span>
-          <span>🇺🇸 United States (USD)</span>
-          <span>🇬🇧 United Kingdom (GBP)</span>
-          <span>🇦🇪 UAE (AED)</span>
-          <span>🇸🇬 Singapore (SGD)</span>
+        <div className="footer-note">
+          <h4>Let’s build something useful</h4>
+          <p>Tell us about your goals, current workflows and the challenge you want to solve.</p>
+          <Link className="text-link" to="/contact">Start a conversation <span aria-hidden="true">→</span></Link>
         </div>
       </div>
       <div className="container footer-bottom">
-        <span>
-          © {new Date().getFullYear()} Bandevi Global Group. All rights
-          reserved.
-        </span>
+        <span>© {new Date().getFullYear()} Bandevi Global Group. All rights reserved.</span>
         <div>
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms & Conditions</Link>
-          <a href="https://www.mca.gov.in/" target="_blank" rel="noreferrer">
-            Company records
-          </a>
         </div>
       </div>
     </footer>
