@@ -66,11 +66,11 @@ const industries = [
     [Newspaper, "Media & Publishing"],
 ];
 const stats = [
-    [CalendarDays, "18+ Years", "Team experience"],
-    [Monitor, "90,000+", "Websites delivered"],
-    [Globe2, "5 Markets", "International reach"],
-    [Users, "100+", "Professionals"],
-    [ShieldCheck, "Reliable", "Delivery & support"],
+    [Layers3, "Business-first", "Solutions shaped around your goals"],
+    [Globe2, "Connected", "Web, mobile and business systems"],
+    [Users, "User-focused", "Experiences for customers and teams"],
+    [ShieldCheck, "Scalable", "Built to support changing needs"],
+    [Headset, "Ongoing", "A clear handover and support scope"],
 ];
 const projects = [
     [
@@ -211,7 +211,7 @@ export default function Home() {
                 <div className="container">
                     <SectionHeading
                         eyebrow="Selected work"
-                        title="Real projects. Measurable outcomes."
+                        title="A selection of digital concepts."
                         action={
                             <Link className="text-link" to="/our-work">
                                 View all projects <ArrowRight size={16} />
