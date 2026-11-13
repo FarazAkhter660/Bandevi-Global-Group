@@ -49,7 +49,7 @@ export default function About() {
           </div>
           <img
             className="about-photo"
-            src="/images/office.svg"
+            src="/images/office-team.svg"
             alt="Illustrative collaborative workspace"
           />
         </div>

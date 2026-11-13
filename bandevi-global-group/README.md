@@ -1,26 +1,27 @@
-# Bandevi Global Group – Website
+# Bandevi Global Group — Website
 
-A responsive company website built using **React.js, Vite, React Router, CSS, and Lucide Icons**.
+A responsive company website built with **React 18, Vite 6, React Router and Lucide Icons**.
 
 ## Pages
 - Home
 - Services
 - Industries
 - Our Work
-- About Us
+- About
 - Contact
 - Privacy Policy
 - Terms & Conditions
 
 ## Features
-- Responsive design for desktop and mobile
+- Responsive navigation and page layouts
 - Reusable React components
-- Custom SVG images and illustrations
-- Navigation between pages
-- Contact and WhatsApp buttons
-- Modern UI design
+- Premium visual system with reduced-motion support
+- Custom SVG illustrations and brand assets
+- Contact links and WhatsApp contact shortcut
+- SEO and social-sharing metadata
+- Client-side routing with scroll-to-top behaviour
 
-## Installation
+## Local development
 
 **Requirements:** Node.js and npm.
 
@@ -31,21 +32,24 @@ npm run dev
 
 Open the local URL provided by Vite, usually `http://localhost:5173`.
 
-## Production Build
+## Production build
 
 ```bash
 npm run build
+npm run preview
 ```
 
-The production files will be generated in the `dist` folder.
+The production files are generated in the `dist` directory.
 
-## Important Notes
-- Project images are illustrative concepts.
-- Verify company details and contact information before publishing.
-- The contact form requires backend integration for storing enquiries.
-- Privacy Policy and Terms & Conditions need approved legal content.
-- Replace placeholder social links with official company profiles.
+## Before publishing
+
+- Verify company details, contact information, statistics and service claims.
+- Replace illustrative project visuals with approved screenshots and case studies.
+- Add official social profile URLs when confirmed by the company.
+- Connect the contact form to an approved backend or form service if enquiries must be stored. The current form opens a pre-filled email draft and does not submit to a server.
+- Have the Privacy Policy and Terms & Conditions reviewed and approved by the company.
+- Confirm Vercel project root is set to `bandevi-global-group`, because the app is nested in that folder.
 
 ## Deployment
 
-Build the project and deploy the `dist` folder to your hosting provider after company review and approval.
+Connect the repository to Vercel and deploy the `bandevi-global-group` project directory. Preview deployments should be reviewed before promoting changes to production.
