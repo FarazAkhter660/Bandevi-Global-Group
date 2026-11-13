@@ -1,3 +1,70 @@
-import React, { useState } from 'react'
-import { ArrowRight } from 'lucide-react'
-export default function ContactForm() { const [prepared, setPrepared] = useState(false); function submit(e) { e.preventDefault(); const d = new FormData(e.currentTarget); const subject = encodeURIComponent(`Website enquiry from ${d.get('name')}`); const body = encodeURIComponent(`Name: ${d.get('name')}\nEmail: ${d.get('email')}\nCompany: ${d.get('company') || 'Not provided'}\nService: ${d.get('service')}\n\nProject details:\n${d.get('message')}`); window.location.href = `mailto:sales@bandeviglobalgroup.com?subject=${subject}&body=${body}`; setPrepared(true) } return <form className="contact-form" onSubmit={submit}><div className="form-row"><label>Your name *<input name="name" required placeholder="Enter your name" /></label><label>Email address *<input name="email" type="email" required placeholder="you@company.com" /></label></div><div className="form-row"><label>Company<input name="company" placeholder="Company name" /></label><label>Service needed *<select name="service" required defaultValue=""><option value="" disabled>Select a service</option><option>Website & app development</option><option>CRM & ERP solutions</option><option>Travel technology</option><option>AI & automation</option><option>Other</option></select></label></div><label>Tell us about your project *<textarea name="message" rows="5" required placeholder="What would you like to build or improve?" /></label><button className="button button-primary" type="submit">Prepare enquiry <ArrowRight size={18} /></button><p className="form-hint">{prepared ? 'Your email application should open with the enquiry prepared.' : 'This frontend form prepares an email. A backend connection is required for direct submission.'}</p></form> }
+import React, { useState } from "react";
+import { ArrowRight } from "lucide-react";
+export default function ContactForm() {
+  const [prepared, setPrepared] = useState(false);
+  function submit(e) {
+    e.preventDefault();
+    const d = new FormData(e.currentTarget);
+    const subject = encodeURIComponent(`Website enquiry from ${d.get("name")}`);
+    const body = encodeURIComponent(
+      `Name: ${d.get("name")}\nEmail: ${d.get("email")}\nCompany: ${d.get("company") || "Not provided"}\nService: ${d.get("service")}\n\nProject details:\n${d.get("message")}`,
+    );
+    window.location.href = `mailto:sales@bandeviglobalgroup.com?subject=${subject}&body=${body}`;
+    setPrepared(true);
+  }
+  return (
+    <form className="contact-form" onSubmit={submit}>
+      <div className="form-row">
+        <label>
+          Your name *
+          <input name="name" required placeholder="Enter your name" />
+        </label>
+        <label>
+          Email address *
+          <input
+            name="email"
+            type="email"
+            required
+            placeholder="you@company.com"
+          />
+        </label>
+      </div>
+      <div className="form-row">
+        <label>
+          Company
+          <input name="company" placeholder="Company name" />
+        </label>
+        <label>
+          Service needed *
+          <select name="service" required defaultValue="">
+            <option value="" disabled>
+              Select a service
+            </option>
+            <option>Website & app development</option>
+            <option>CRM & ERP solutions</option>
+            <option>Travel technology</option>
+            <option>AI & automation</option>
+            <option>Other</option>
+          </select>
+        </label>
+      </div>
+      <label>
+        Tell us about your project *
+        <textarea
+          name="message"
+          rows="5"
+          required
+          placeholder="What would you like to build or improve?"
+        />
+      </label>
+      <button className="button button-primary" type="submit">
+        Prepare enquiry <ArrowRight size={18} />
+      </button>
+      <p className="form-hint">
+        {prepared
+          ? "Your email application should open with the enquiry prepared."
+          : "This frontend form prepares an email. A backend connection is required for direct submission."}
+      </p>
+    </form>
+  );
+}

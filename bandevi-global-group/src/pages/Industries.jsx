@@ -1,6 +1,96 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import {ArrowRight,Plane,ShoppingCart,GraduationCap,HeartPulse,House,Factory,BriefcaseBusiness,Newspaper} from 'lucide-react'
-import SectionHeading from '../components/SectionHeading'
-const items=[[Plane,'Travel & hospitality','Booking operations, supplier coordination, itinerary management and guest enquiries.'],[ShoppingCart,'Retail & e-commerce','Online stores, customer journeys, order workflows and stock visibility.'],[GraduationCap,'Education & training','Admissions enquiries, learner portals, course administration and digital resources.'],[HeartPulse,'Healthcare & wellness','Service websites, appointment request workflows and patient communication.'],[House,'Real estate','Property listings, lead follow-up, client communication and sales pipeline tracking.'],[Factory,'Manufacturing & distribution','Stock, purchase approvals, operations workflows and reporting.'],[BriefcaseBusiness,'Professional services','Client enquiries, project handovers, workflow approvals and document management.'],[Newspaper,'Media & publishing','Content websites, publishing workflows and audience experiences.']]
-export default function Industries(){return <><section className="page-hero"><div className="container"><div className="eyebrow eyebrow-light"><span/>Industries we support</div><h1>Software for the way your industry works.</h1><p>Explore how websites, apps, CRM, ERP and automation can support the details of your day-to-day operations.</p></div></section><section className="section"><div className="container"><SectionHeading eyebrow="Industry solutions" title="Start with your business context" text="Every organisation has different customers, processes and priorities. We shape the solution around those needs."/><div className="industry-detail-grid">{items.map(([Icon,title,desc])=><article className="industry-detail" key={title}><Icon/><h3>{title}</h3><p>{desc}</p><Link className="text-link" to="/contact">Discuss your requirements <ArrowRight size={15}/></Link></article>)}</div></div></section></>}
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  ArrowRight,
+  Plane,
+  ShoppingCart,
+  GraduationCap,
+  HeartPulse,
+  House,
+  Factory,
+  BriefcaseBusiness,
+  Newspaper,
+} from "lucide-react";
+import SectionHeading from "../components/SectionHeading";
+const items = [
+  [
+    Plane,
+    "Travel & hospitality",
+    "Booking operations, supplier coordination, itinerary management and guest enquiries.",
+  ],
+  [
+    ShoppingCart,
+    "Retail & e-commerce",
+    "Online stores, customer journeys, order workflows and stock visibility.",
+  ],
+  [
+    GraduationCap,
+    "Education & training",
+    "Admissions enquiries, learner portals, course administration and digital resources.",
+  ],
+  [
+    HeartPulse,
+    "Healthcare & wellness",
+    "Service websites, appointment request workflows and patient communication.",
+  ],
+  [
+    House,
+    "Real estate",
+    "Property listings, lead follow-up, client communication and sales pipeline tracking.",
+  ],
+  [
+    Factory,
+    "Manufacturing & distribution",
+    "Stock, purchase approvals, operations workflows and reporting.",
+  ],
+  [
+    BriefcaseBusiness,
+    "Professional services",
+    "Client enquiries, project handovers, workflow approvals and document management.",
+  ],
+  [
+    Newspaper,
+    "Media & publishing",
+    "Content websites, publishing workflows and audience experiences.",
+  ],
+];
+export default function Industries() {
+  return (
+    <>
+      <section className="page-hero">
+        <div className="container">
+          <div className="eyebrow eyebrow-light">
+            <span />
+            Industries we support
+          </div>
+          <h1>Software for the way your industry works.</h1>
+          <p>
+            Explore how websites, apps, CRM, ERP and automation can support the
+            details of your day-to-day operations.
+          </p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="container">
+          <SectionHeading
+            eyebrow="Industry solutions"
+            title="Start with your business context"
+            text="Every organisation has different customers, processes and priorities. We shape the solution around those needs."
+          />
+          <div className="industry-detail-grid">
+            {items.map(([Icon, title, desc]) => (
+              <article className="industry-detail" key={title}>
+                <Icon />
+                <h3>{title}</h3>
+                <p>{desc}</p>
+                <Link className="text-link" to="/contact">
+                  Discuss your requirements <ArrowRight size={15} />
+                </Link>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
