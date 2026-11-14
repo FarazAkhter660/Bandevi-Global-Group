@@ -236,11 +236,6 @@ export default function Home() {
                             </article>
                         ))}
                     </div>
-                    <p className="disclaimer">
-                        Project visuals are illustrative concepts. Replace them with
-                        approved screenshots and verified case-study details before
-                        publishing.
-                    </p>
                 </div>
             </section>
             <section className="section about">
