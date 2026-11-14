@@ -2,7 +2,7 @@
 :root{--ref-purple:#08052e;--ref-blue:#315cff;--ref-cyan:#17b7ee;--ref-ink:#111827;--ref-muted:#647084}
 body{background:#f3f5fa;color:var(--ref-ink)}
 .site-header{height:82px;background:rgba(7,5,39,.96);border-bottom:1px solid #ffffff12;box-shadow:none}
-.site-header .brand img{filter:brightness(0) invert(1);opacity:.96}
+.site-header .brand img{filter:none;opacity:1}\n.site-footer .brand img{filter:none;opacity:1}
 .main-nav>a:not(.button){color:#c6c9e4;font-size:13px;font-weight:600}
 .main-nav>a.active,.main-nav>a:not(.button):hover{color:#fff}
 .main-nav>a.active:after,.main-nav>a:not(.button):hover:after{background:#6657ff}
@@ -92,3 +92,12 @@ body{background:#f3f5fa;color:var(--ref-ink)}
 @media(max-width:900px){.hero--nexus,.hero-grid--centered{min-height:690px}.hero--nexus .hero-art{margin-bottom:-100px}.portfolio--editorial .project-grid,.work-editorial .case-grid{grid-template-columns:1fr 1fr}.portfolio--editorial .project-card:first-child,.work-editorial .case-card:first-child{grid-row:auto;grid-column:1/-1}.portfolio--editorial .project-card:first-child .project-image,.work-editorial .case-card:first-child .case-image img{height:300px;min-height:0}.stats-inner{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:650px){.site-header{background:#080626}.mobile-toggle{background:#ffffff12;color:#fff;border-color:#ffffff26}.main-nav{background:#09072f;border:1px solid #ffffff1c}.hero--nexus,.hero-grid--centered{min-height:620px}.hero-grid--centered{padding-top:55px}.hero--nexus h1{font-size:clamp(40px,10vw,56px);letter-spacing:-2.4px}.hero--nexus .hero-art{width:calc(100% + 24px);margin:32px -12px -55px}.hero--nexus .hero-art img{border-radius:16px 16px 0 0}.services-panel{padding:38px 18px 22px;border-radius:20px}.services-panel .service-grid,.services-detail-showcase .offering-grid{grid-template-columns:1fr}.services-panel .service-card{min-height:190px;padding:22px}.portfolio--editorial,.work-editorial{padding:65px 0}.portfolio--editorial .project-grid,.work-editorial .case-grid{grid-template-columns:1fr}.portfolio--editorial .project-card:first-child,.work-editorial .case-card:first-child{grid-column:auto}.portfolio--editorial .project-card:first-child .project-image,.work-editorial .case-card:first-child .case-image img{height:240px}.portfolio--editorial .project-image{height:230px}.stats-inner{grid-template-columns:repeat(2,1fr)}}
 @media(prefers-reduced-motion:reduce){.hero--nexus .hero-art img{animation:none}}
+
+
+/* Final polish: preserve the complete brand mark and keep portfolio artwork inside its frame. */
+.site-header .brand img,.site-footer .brand img{filter:none!important;object-fit:contain}
+.portfolio--editorial .project-card:first-child .project-image{width:100%;height:100%;min-height:490px;overflow:hidden;background:#cce8ed;display:flex;align-items:center;justify-content:center}
+.portfolio--editorial .project-card:first-child .project-image img{width:100%;height:100%;max-width:100%;object-fit:contain;object-position:center;display:block}
+.work-editorial .case-card:first-child .case-image{width:100%;min-height:500px;overflow:hidden;background:#cce8ed;display:flex;align-items:center;justify-content:center}
+.work-editorial .case-card:first-child .case-image img{width:100%;height:100%;max-width:100%;min-height:500px;object-fit:contain;object-position:center;display:block}
+@media(max-width:900px){.portfolio--editorial .project-card:first-child .project-image,.work-editorial .case-card:first-child .case-image{height:300px;min-height:300px}.portfolio--editorial .project-card:first-child .project-image img,.work-editorial .case-card:first-child .case-image img{height:100%;min-height:0}}
