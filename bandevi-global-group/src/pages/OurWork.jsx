@@ -48,7 +48,7 @@ export default function OurWork() {
                 </div>
             </section>
 
-            <section className="section">
+            <section className="section work-editorial">
                 <div className="container">
                     <SectionHeading
                         eyebrow="Project showcase"
