@@ -186,8 +186,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="section industries">
-                <div className="container">
+            <section className="section industries industries-showcase">
+                <div className="container industries-panel">
                     <SectionHeading
                         eyebrow="Industries we support"
                         title="Solutions for your industry"
