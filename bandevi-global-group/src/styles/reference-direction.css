@@ -51,7 +51,7 @@ body{background:#f3f5fa;color:var(--ref-ink)}
 .portfolio--editorial .section-heading .eyebrow{color:#9babb0}
 .portfolio--editorial .section-heading p{color:#9ba8ad}
 .portfolio--editorial .text-link{color:#d8e4e8;border-color:#657277}
-.portfolio--editorial .project-grid{grid-template-columns:1.35fr .8fr .8fr;gap:14px;align-items:stretch}
+.portfolio--editorial .project-grid{grid-template-columns:1.25fr .85fr;grid-template-rows:repeat(2,minmax(210px,auto));gap:14px;align-items:stretch}
 .portfolio--editorial .project-card{background:#171c1e;border:1px solid #424b4e;border-radius:18px;box-shadow:none;display:flex;flex-direction:column}
 .portfolio--editorial .project-card:first-child{grid-row:span 2}
 .portfolio--editorial .project-image{height:250px;background:#18272c}
@@ -79,7 +79,7 @@ body{background:#f3f5fa;color:var(--ref-ink)}
 .services-detail-showcase .offering-card h3{color:#171d2d}.services-detail-showcase .offering-card p{color:#687386}
 .work-editorial{background:#111516;color:#fff;padding:88px 0}
 .work-editorial .section-heading h2{color:#fff}.work-editorial .section-heading .eyebrow{color:#a9b5b8}.work-editorial .section-heading p{color:#9da9ad}
-.work-editorial .case-grid{grid-template-columns:1.25fr .85fr .85fr;gap:16px}
+.work-editorial .case-grid{grid-template-columns:1.25fr .85fr;grid-template-rows:repeat(2,minmax(220px,auto));gap:16px}
 .work-editorial .case-card{background:#191e20;border:1px solid #41494c;border-radius:16px;box-shadow:none}
 .work-editorial .case-card:first-child{grid-row:span 2}
 .work-editorial .case-image img{height:280px;object-fit:cover}
