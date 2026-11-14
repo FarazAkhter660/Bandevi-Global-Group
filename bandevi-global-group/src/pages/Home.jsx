@@ -99,9 +99,9 @@ const values = [
 export default function Home() {
     return (
         <>
-            <section className="hero">
+            <section className="hero hero--nexus">
                 <div className="hero-glow" />
-                <div className="container hero-grid">
+                <div className="container hero-grid hero-grid--centered">
                     <div className="hero-copy">
                         <div className="eyebrow eyebrow-light">
                             <span />
@@ -157,8 +157,8 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-            <section className="section">
-                <div className="container">
+            <section className="section services-showcase">
+                <div className="container services-panel">
                     <SectionHeading
                         eyebrow="Our services"
                         title="End-to-end technology solutions"
@@ -207,7 +207,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <section className="section portfolio">
+            <section className="section portfolio portfolio--editorial">
                 <div className="container">
                     <SectionHeading
                         eyebrow="Selected work"
