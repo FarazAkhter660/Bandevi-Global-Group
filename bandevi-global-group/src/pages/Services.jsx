@@ -59,7 +59,7 @@ export default function Services() {
           </p>
         </div>
       </section>
-      <section className="section">
+      <section className="section services-detail-showcase">
         <div className="container">
           <SectionHeading
             eyebrow="Our capabilities"
