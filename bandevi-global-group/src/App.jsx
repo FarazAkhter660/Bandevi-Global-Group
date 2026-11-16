@@ -3,6 +3,7 @@ import { Routes, Route, useLocation, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AIAssistant from "./components/AIAssistant";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Industries from "./pages/Industries";
@@ -50,6 +51,7 @@ export default function App() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <AIAssistant />
     </>
   );
 }
