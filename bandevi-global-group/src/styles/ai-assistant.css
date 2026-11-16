@@ -1,0 +1,33 @@
+/* Bandevi AI Project Advisor */
+.ai-advisor{position:fixed;z-index:1200;right:24px;bottom:26px;font-family:"DM Sans",sans-serif}
+.ai-launcher{height:58px;min-width:132px;padding:0 21px;border:0;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(110deg,#6c37f4,#4010c5);color:#fff;font-size:14px;font-weight:800;box-shadow:0 12px 34px #3c19a64a;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.ai-launcher:hover{transform:translateY(-3px);box-shadow:0 16px 38px #3c19a65c}
+.ai-launcher.is-open{min-width:58px;width:58px;padding:0;background:#17133f}
+.ai-panel{position:absolute;right:0;bottom:74px;width:min(390px,calc(100vw - 32px));height:min(590px,calc(100vh - 130px));display:flex;flex-direction:column;overflow:hidden;border:1px solid #e7e8f2;border-radius:22px;background:#fff;box-shadow:0 24px 80px #0b12352e;animation:ai-panel-in .2s ease-out}
+.ai-panel-header{display:flex;align-items:center;gap:11px;padding:17px 16px;background:linear-gradient(115deg,#0a082e,#21145e);color:#fff}
+.ai-avatar{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:#6b4bf4;color:#fff}
+.ai-heading{display:flex;flex:1;flex-direction:column;gap:3px}
+.ai-heading strong{font-size:14px}.ai-heading span{font-size:11px;color:#c5c4e4}.ai-heading i{display:inline-block;width:7px;height:7px;margin-right:5px;border-radius:50%;background:#38d7a0}
+.ai-icon-button{width:30px;height:30px;display:grid;place-items:center;border:0;border-radius:9px;background:#ffffff12;color:#e8e7ff;cursor:pointer}
+.ai-messages{flex:1;overflow-y:auto;padding:17px 14px;background:#f7f8fc}
+.ai-message-row{display:flex;align-items:flex-end;gap:7px;margin-bottom:13px}
+.ai-message-row.is-user{justify-content:flex-end}
+.ai-message-avatar{width:25px;height:25px;flex:0 0 25px;display:grid;place-items:center;border-radius:9px;background:#e9e6ff;color:#5740ce}
+.ai-message{max-width:85%;padding:11px 13px;border:1px solid #e7e9f2;border-radius:15px 15px 15px 4px;background:#fff;color:#263047;font-size:13px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}
+.ai-message-row.is-user .ai-message{border-color:#5638d5;border-radius:15px 15px 4px 15px;background:#5638d5;color:#fff}
+.ai-starters{display:flex;flex-direction:column;gap:7px;margin:8px 0 12px 32px}
+.ai-starters>span{color:#788197;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.ai-starters button{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 11px;border:1px solid #e2e3f2;border-radius:11px;background:#fff;color:#4535a6;font-size:12px;text-align:left;cursor:pointer}
+.ai-starters button:hover{border-color:#8c7cf0;background:#f7f5ff}
+.ai-typing{display:flex;align-items:center;gap:5px;margin:0 0 10px 33px;color:#778097;font-size:11px}
+.ai-typing span{width:6px;height:6px;border-radius:50%;background:#7965df;animation:ai-dot 1s infinite ease-in-out}.ai-typing span:nth-child(2){animation-delay:.15s}.ai-typing span:nth-child(3){animation-delay:.3s}
+.ai-compose{display:flex;gap:8px;padding:12px;border-top:1px solid #eceef5;background:#fff}
+.ai-compose input{min-width:0;flex:1;padding:12px 13px;border:1px solid #e0e3ee;border-radius:12px;outline:none;color:#172036;font:inherit;font-size:13px}
+.ai-compose input:focus{border-color:#7964e8;box-shadow:0 0 0 3px #7964e81c}
+.ai-compose button{width:44px;flex:0 0 44px;display:grid;place-items:center;border:0;border-radius:12px;background:#5839d5;color:#fff;cursor:pointer}
+.ai-compose button:disabled{opacity:.45;cursor:not-allowed}
+.ai-disclaimer{margin:0;padding:0 13px 11px;background:#fff;color:#8a91a3;font-size:10px;text-align:center}
+@keyframes ai-dot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
+@keyframes ai-panel-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:600px){.ai-advisor{right:14px;bottom:16px}.ai-launcher{height:52px;min-width:116px}.ai-panel{right:0;bottom:64px;width:calc(100vw - 28px);height:min(560px,calc(100dvh - 100px))}}
+@media(prefers-reduced-motion:reduce){.ai-panel,.ai-typing span{animation:none}.ai-launcher{transition:none}}
