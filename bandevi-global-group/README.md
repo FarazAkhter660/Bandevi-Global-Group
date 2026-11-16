@@ -50,6 +50,17 @@ The production files are generated in the `dist` directory.
 - Have the Privacy Policy and Terms & Conditions reviewed and approved by the company.
 - Confirm Vercel project root is set to `bandevi-global-group`, because the app is nested in that folder.
 
+## AI Project Advisor
+
+The site includes a floating AI assistant for visitors to explore Bandevi services and clarify project requirements. It calls a Vercel serverless function at `/api/ai-assistant`, which uses the Google Gemini API. The API key is never sent to the browser.
+
+Before the assistant can answer on a deployed site, add these environment variables in the Vercel project settings (Production and Preview as needed):
+
+- `GEMINI_API_KEY` — your Gemini API key. Keep it server-side; never add it to a `VITE_` variable or commit it to Git.
+- `GEMINI_MODEL` — optional; defaults to `gemini-3.8-flash`.
+
+Redeploy after setting environment variables. Without `OPENAI_API_KEY`, the widget displays a friendly setup message and the rest of the website continues to work.
+
 ## Deployment
 
 Connect the repository to Vercel and deploy the `bandevi-global-group` project directory. Preview deployments should be reviewed before promoting changes to production.
