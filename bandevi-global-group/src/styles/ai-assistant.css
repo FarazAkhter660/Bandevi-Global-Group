@@ -1,9 +1,9 @@
 /* Bandevi AI Project Advisor */
-.ai-advisor{position:fixed;z-index:1200;right:24px;bottom:26px;font-family:"DM Sans",sans-serif}
+.ai-advisor{position:fixed;z-index:1200;left:24px;bottom:26px;font-family:"DM Sans",sans-serif}
 .ai-launcher{height:58px;min-width:132px;padding:0 21px;border:0;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(110deg,#6c37f4,#4010c5);color:#fff;font-size:14px;font-weight:800;box-shadow:0 12px 34px #3c19a64a;cursor:pointer;transition:transform .2s,box-shadow .2s}
 .ai-launcher:hover{transform:translateY(-3px);box-shadow:0 16px 38px #3c19a65c}
 .ai-launcher.is-open{min-width:58px;width:58px;padding:0;background:#17133f}
-.ai-panel{position:absolute;right:0;bottom:74px;width:min(390px,calc(100vw - 32px));height:min(590px,calc(100vh - 130px));display:flex;flex-direction:column;overflow:hidden;border:1px solid #e7e8f2;border-radius:22px;background:#fff;box-shadow:0 24px 80px #0b12352e;animation:ai-panel-in .2s ease-out}
+.ai-panel{position:absolute;left:0;bottom:74px;width:min(390px,calc(100vw - 32px));height:min(590px,calc(100vh - 130px));display:flex;flex-direction:column;overflow:hidden;border:1px solid #e7e8f2;border-radius:22px;background:#fff;box-shadow:0 24px 80px #0b12352e;animation:ai-panel-in .2s ease-out}
 .ai-panel-header{display:flex;align-items:center;gap:11px;padding:17px 16px;background:linear-gradient(115deg,#0a082e,#21145e);color:#fff}
 .ai-avatar{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:#6b4bf4;color:#fff}
 .ai-heading{display:flex;flex:1;flex-direction:column;gap:3px}
@@ -29,5 +29,5 @@
 .ai-disclaimer{margin:0;padding:0 13px 11px;background:#fff;color:#8a91a3;font-size:10px;text-align:center}
 @keyframes ai-dot{0%,60%,100%{transform:translateY(0);opacity:.45}30%{transform:translateY(-4px);opacity:1}}
 @keyframes ai-panel-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(max-width:600px){.ai-advisor{right:14px;bottom:16px}.ai-launcher{height:52px;min-width:116px}.ai-panel{right:0;bottom:64px;width:calc(100vw - 28px);height:min(560px,calc(100dvh - 100px))}}
+@media(max-width:600px){.ai-advisor{left:14px;bottom:16px}.ai-launcher{height:52px;min-width:116px}.ai-panel{right:0;bottom:64px;width:calc(100vw - 28px);height:min(560px,calc(100dvh - 100px))}}
 @media(prefers-reduced-motion:reduce){.ai-panel,.ai-typing span{animation:none}.ai-launcher{transition:none}}
