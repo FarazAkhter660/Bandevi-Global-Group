@@ -52,12 +52,12 @@ The production files are generated in the `dist` directory.
 
 ## AI Project Advisor
 
-The site includes a floating AI assistant for visitors to explore Bandevi services and clarify project requirements. It calls a Vercel serverless function at `/api/ai-assistant`, which uses the OpenAI Responses API. The API key is never sent to the browser.
+The site includes a floating AI assistant for visitors to explore Bandevi services and clarify project requirements. It calls a Vercel serverless function at `/api/ai-assistant`, which uses the Google Gemini API. The API key is never sent to the browser.
 
 Before the assistant can answer on a deployed site, add these environment variables in the Vercel project settings (Production and Preview as needed):
 
-- `OPENAI_API_KEY` — a server-side OpenAI API key. Never add this to a `VITE_` variable or commit it to Git.
-- `OPENAI_MODEL` — optional; defaults to `gpt-6-astra`.
+- `GEMINI_API_KEY` — your Gemini API key. Keep it server-side; never add it to a `VITE_` variable or commit it to Git.
+- `GEMINI_MODEL` — optional; defaults to `gemini-3.8-flash`.
 
 Redeploy after setting environment variables. Without `OPENAI_API_KEY`, the widget displays a friendly setup message and the rest of the website continues to work.
 
