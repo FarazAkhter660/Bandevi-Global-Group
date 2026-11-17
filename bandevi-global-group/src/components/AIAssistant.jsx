@@ -9,6 +9,51 @@ const tools = [
   { label: "Budget & timeline guide", icon: Wallet, prompt: "Help me understand the main cost and timeline drivers for my project. Ask about scope and complexity first. Do not invent a quote or promise a delivery date; give only relative complexity guidance and explain what Bandevi would need to prepare an estimate." },
 ];
 
+function renderInline(text, keyPrefix = "inline") {
+  const parts = String(text).split(/(\\*\\*[^*]+\\*\\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={`${keyPrefix}-${index}`}>{part.slice(2, -2)}</strong>;
+    }
+    return part;
+  });
+}
+
+function renderMessage(content) {
+  const lines = String(content || "").split(/\\r?\\n/);
+  const blocks = [];
+  let listItems = [];
+
+  const flushList = () => {
+    if (!listItems.length) return;
+    blocks.push(
+      <ul key={`list-${blocks.length}`}>
+        {listItems.map((item, index) => <li key={index}>{renderInline(item, `li-${index}`)}</li>)}
+      </ul>
+    );
+    listItems = [];
+  };
+
+  lines.forEach((rawLine, index) => {
+    const line = rawLine.trim();
+    const bullet = line.match(/^(?:[-*•]|\\d+[.)])\\s+(.+)$/);
+    if (bullet) {
+      listItems.push(bullet[1]);
+      return;
+    }
+    flushList();
+    if (!line) return;
+    const heading = line.match(/^#{1,3}\\s+(.+)$/);
+    blocks.push(
+      heading
+        ? <strong className="ai-message-heading" key={`heading-${index}`}>{renderInline(heading[1], `heading-${index}`)}</strong>
+        : <p key={`paragraph-${index}`}>{renderInline(line, `line-${index}`)}</p>
+    );
+  });
+  flushList();
+  return blocks;
+}
+
 export default function AIAssistant() {
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
@@ -95,7 +140,7 @@ export default function AIAssistant() {
             {messages.map((message, index) => (
               <div className={`ai-message-row ${message.role === "user" ? "is-user" : ""}`} key={index}>
                 {message.role === "assistant" && <span className="ai-message-avatar"><Bot size={15} /></span>}
-                <div className="ai-message">{message.content}</div>
+                <div className="ai-message">{renderMessage(message.content)}</div>
               </div>
             ))}
             {messages.length === 1 && (
