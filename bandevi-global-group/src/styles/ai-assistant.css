@@ -44,3 +44,13 @@
 .ai-actions button{display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border:1px solid #e3e2f1;border-radius:999px;background:#faf9ff;color:#5140b3;font-size:10px;font-weight:700;cursor:pointer}
 .ai-actions button:hover{border-color:#9384eb;background:#f2efff}
 @media(max-width:380px){.ai-tool-grid{grid-template-columns:1fr}.ai-tool-card{min-height:48px}}
+
+
+/* Readable formatting for AI-generated Markdown content */
+.ai-message p{margin:0 0 8px}
+.ai-message p:last-child{margin-bottom:0}
+.ai-message ul{margin:4px 0 9px;padding-left:20px}
+.ai-message li{padding-left:2px;margin:0 0 5px}
+.ai-message strong{font-weight:800;color:#17213a}
+.ai-message-heading{display:block;margin:2px 0 7px;font-size:1.04em}
+.ai-message-row.is-user .ai-message strong{color:#fff}
