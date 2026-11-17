@@ -55,6 +55,10 @@ export default function AIAssistant() {
     setCopied(false);
   }
 
+  function prepareBrief() {
+    sendMessage("Please turn our conversation into a concise, structured project brief for the Bandevi team. Include business goal, proposed solution, key features, integrations, preferred platform, constraints, open questions, and next steps. Only use details I have provided; mark missing information as not provided. Do not invent pricing or timelines.");
+  }
+
   async function copyBrief() {
     const transcript = messages.map((message) => `${message.role === "user" ? "Visitor" : "Bandevi AI"}: ${message.content}`).join("\n\n");
     const brief = `PROJECT DISCUSSION — BANDEVI GLOBAL GROUP\n\n${transcript}\n\nNext step: Review the requirements with the Bandevi team.\nEmail: sales@bandeviglobalgroup.com\nPhone: +91 70110 40474`;
@@ -112,7 +116,8 @@ export default function AIAssistant() {
           <div className="ai-actions">
             {userMessageCount >= 2 && !busy && (
               <>
-                <button type="button" onClick={copyBrief}><Copy size={13} />{copied ? "Copied project discussion" : "Copy project brief"}</button>
+                <button type="button" onClick={prepareBrief} disabled={busy}><ClipboardList size={13} />Create AI project brief</button>
+                <button type="button" onClick={copyBrief}><Copy size={13} />{copied ? "Copied discussion" : "Copy discussion"}</button>
                 <button type="button" onClick={emailBrief}><Mail size={13} />Email Bandevi</button>
               </>
             )}
