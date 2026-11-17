@@ -31,3 +31,16 @@
 @keyframes ai-panel-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:600px){.ai-advisor{left:14px;bottom:16px}.ai-launcher{height:52px;min-width:116px}.ai-panel{right:0;bottom:64px;width:calc(100vw - 28px);height:min(560px,calc(100dvh - 100px))}}
 @media(prefers-reduced-motion:reduce){.ai-panel,.ai-typing span{animation:none}.ai-launcher{transition:none}}
+
+/* Guided AI toolkit and project enquiry actions */
+.ai-toolkit{margin:8px 0 15px 32px}
+.ai-toolkit-label{display:block;margin-bottom:9px;color:#788197;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.ai-tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ai-tool-card{min-height:68px;display:grid;grid-template-columns:18px 1fr 13px;align-items:center;gap:7px;padding:10px;border:1px solid #e4e5f1;border-radius:12px;background:#fff;color:#4435a5;font-size:11px;font-weight:700;text-align:left;cursor:pointer;transition:border-color .18s,background .18s,transform .18s}
+.ai-tool-card:hover{border-color:#9586ef;background:#f8f6ff;transform:translateY(-1px)}
+.ai-tool-card span{line-height:1.35}
+.ai-actions{display:flex;flex-wrap:wrap;gap:7px;padding:0 12px 9px;background:#fff}
+.ai-actions:empty{display:none}
+.ai-actions button{display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border:1px solid #e3e2f1;border-radius:999px;background:#faf9ff;color:#5140b3;font-size:10px;font-weight:700;cursor:pointer}
+.ai-actions button:hover{border-color:#9384eb;background:#f2efff}
+@media(max-width:380px){.ai-tool-grid{grid-template-columns:1fr}.ai-tool-card{min-height:48px}}

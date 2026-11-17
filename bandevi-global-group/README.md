@@ -61,6 +61,10 @@ Before the assistant can answer on a deployed site, add these environment variab
 
 Redeploy after setting environment variables. Without `OPENAI_API_KEY`, the widget displays a friendly setup message and the rest of the website continues to work.
 
+### AI Advisor capabilities
+
+The assistant offers guided project planning, feature recommendations, technology-stack guidance, budget/timeline factor explanations, AI-generated structured project briefs, and actions to copy the discussion or open an email draft to the sales team. It does not submit or store leads; visitors initiate the email themselves. Estimates are indicative guidance only and must be confirmed by the Bandevi team.
+
 ## Deployment
 
 Connect the repository to Vercel and deploy the `bandevi-global-group` project directory. Preview deployments should be reviewed before promoting changes to production.
