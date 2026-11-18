@@ -1,97 +1,104 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" fill="none">
 <defs>
- <linearGradient id="frame" x1="90" y1="34" x2="630" y2="445" gradientUnits="userSpaceOnUse"><stop stop-color="#A7B8FF"/><stop offset=".48" stop-color="#5366B7"/><stop offset="1" stop-color="#45D8D0"/></linearGradient>
- <linearGradient id="glass" x1="70" y1="25" x2="690" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#1B2552"/><stop offset=".55" stop-color="#101B3B"/><stop offset="1" stop-color="#092D40"/></linearGradient>
- <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7FBFF"/><stop offset="1" stop-color="#DCEAF2"/></linearGradient>
- <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9274FF"/><stop offset="1" stop-color="#4D70E9"/></linearGradient>
- <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59F0D6"/><stop offset="1" stop-color="#12AFAF"/></linearGradient>
- <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#153D59"/><stop offset="1" stop-color="#071B32"/></linearGradient>
- <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="17"/></filter>
- <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
- <clipPath id="screenClip"><rect x="105" y="82" width="520" height="316" rx="13"/></clipPath>
+ <linearGradient id="bg" x1="80" y1="20" x2="690" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#1D2858"/><stop offset=".52" stop-color="#111B3B"/><stop offset="1" stop-color="#082D3B"/></linearGradient>
+ <linearGradient id="rim" x1="90" y1="30" x2="690" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#A8B4FF"/><stop offset=".48" stop-color="#6576E9"/><stop offset="1" stop-color="#4DE2D3"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#18264D"/><stop offset="1" stop-color="#0B1834"/></linearGradient>
+ <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F8FCFF"/><stop offset="1" stop-color="#DCEAF2"/></linearGradient>
+ <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9D83FF"/><stop offset="1" stop-color="#6258E8"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#70F3DD"/><stop offset="1" stop-color="#11AFAE"/></linearGradient>
+ <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16445D"/><stop offset="1" stop-color="#07182F"/></linearGradient>
+ <filter id="blur" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="12"/></filter>
+ <clipPath id="dash"><rect x="104" y="91" width="530" height="313" rx="13"/></clipPath>
 </defs>
-<!-- ambient light and orbit details -->
-<ellipse cx="380" cy="458" rx="285" ry="28" fill="#020817" opacity=".55" filter="url(#shadow)"/>
-<circle cx="612" cy="104" r="100" fill="#6E5BFF" opacity=".13" filter="url(#softglow)"/>
-<circle cx="125" cy="374" r="82" fill="#21D8CA" opacity=".11" filter="url(#softglow)"/>
-<path d="M54 150C94 47 210 8 326 28M548 466c90-26 145-92 158-173" stroke="#8195FF" stroke-opacity=".24" stroke-width="1.5" stroke-dasharray="4 9"/>
-<circle cx="54" cy="150" r="4" fill="#7A8BFF"/><circle cx="706" cy="293" r="4" fill="#53E2D2"/>
-<!-- main floating browser frame -->
-<rect x="70" y="38" width="594" height="402" rx="27" fill="#070F25" stroke="url(#frame)" stroke-width="4"/>
-<rect x="81" y="49" width="572" height="380" rx="19" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".12"/>
-<rect x="96" y="65" width="542" height="31" rx="9" fill="#FFFFFF" fill-opacity=".055"/>
-<circle cx="113" cy="80" r="4" fill="#FFBD75"/><circle cx="128" cy="80" r="4" fill="#63DCCB"/><circle cx="143" cy="80" r="4" fill="#8A7BFF"/>
-<rect x="166" y="74" width="240" height="12" rx="6" fill="#AFC2E6" fill-opacity=".18"/>
-<g clip-path="url(#screenClip)">
- <rect x="105" y="82" width="520" height="316" fill="url(#screen)"/>
- <rect x="105" y="82" width="520" height="45" fill="#0B2D43"/>
- <rect x="122" y="94" width="23" height="23" rx="7" fill="url(#teal)"/>
- <text x="133.5" y="110" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#05283A">BG</text>
- <text x="155" y="110" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#F5FAFF">BANDEVI CRM</text>
- <text x="550" y="109" font-family="Arial,sans-serif" font-size="9" fill="#A9C4D7">WORKSPACE</text>
- <rect x="119" y="142" width="104" height="238" rx="10" fill="#0C3048"/>
- <g font-family="Arial,sans-serif" font-size="10" fill="#C6DCE8">
-  <rect x="128" y="154" width="85" height="27" rx="7" fill="#6659D9" fill-opacity=".36"/>
-  <path d="M139 163h10v9h-10zM141 161h6" stroke="#A9B4FF" stroke-width="1.2"/>
-  <text x="155" y="172" fill="#FFFFFF">Overview</text>
-  <circle cx="144" cy="203" r="5" stroke="#8BAFC3"/><path d="M141 203h6M144 200v6" stroke="#8BAFC3"/>
-  <text x="155" y="206">Enquiries</text>
-  <path d="M139 229h10v8h-10zM141 227h6" stroke="#8BAFC3"/>
-  <text x="155" y="237">Customers</text>
-  <path d="M139 258h10v9h-10zM141 261h6M141 264h6" stroke="#8BAFC3"/>
-  <text x="155" y="266">Reports</text>
-  <circle cx="144" cy="294" r="5" stroke="#8BAFC3"/><path d="M144 287v3M144 298v3M137 294h3M148 294h3" stroke="#8BAFC3"/>
-  <text x="155" y="297">Settings</text>
+<!-- ambient halo -->
+<ellipse cx="382" cy="468" rx="285" ry="24" fill="#020716" opacity=".65" filter="url(#shadow)"/>
+<circle cx="614" cy="111" r="95" fill="#7664FF" opacity=".19" filter="url(#blur)"/>
+<circle cx="118" cy="380" r="86" fill="#24D7C6" opacity=".12" filter="url(#blur)"/>
+<path d="M34 191C57 85 151 22 272 23M517 489c117-32 187-116 206-231" stroke="#8999FF" stroke-opacity=".25" stroke-width="1.4" stroke-dasharray="3 9"/>
+<circle cx="34" cy="191" r="4" fill="#8D8BFF"/><circle cx="723" cy="258" r="4" fill="#4CE4D4"/>
+<!-- back panel -->
+<rect x="53" y="34" width="630" height="424" rx="30" fill="#050D22" stroke="url(#rim)" stroke-opacity=".8" stroke-width="2.5"/>
+<rect x="64" y="45" width="608" height="402" rx="23" fill="url(#bg)" stroke="#FFFFFF" stroke-opacity=".11"/>
+<!-- browser frame -->
+<rect x="83" y="67" width="574" height="354" rx="20" fill="#071329" stroke="#AFC1FF" stroke-opacity=".27"/>
+<rect x="96" y="80" width="548" height="31" rx="9" fill="#FFFFFF" fill-opacity=".055"/>
+<circle cx="113" cy="95" r="4" fill="#FFBE79"/><circle cx="128" cy="95" r="4" fill="#4DE0C7"/><circle cx="143" cy="95" r="4" fill="#8A7BFF"/>
+<rect x="166" y="90" width="180" height="10" rx="5" fill="#AFC3E8" fill-opacity=".17"/>
+<g clip-path="url(#dash)">
+ <rect x="104" y="91" width="530" height="313" fill="url(#screen)"/>
+ <rect x="104" y="91" width="530" height="43" fill="#0B2D43"/>
+ <rect x="120" y="102" width="23" height="23" rx="7" fill="url(#cyan)"/>
+ <text x="131.5" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#05283A">BG</text>
+ <text x="153" y="118" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#F7FCFF">BANDEVI CRM</text>
+ <text x="551" y="117" font-family="Arial,sans-serif" font-size="8" letter-spacing="1" fill="#A9C4D7">WORKSPACE</text>
+ <!-- sidebar -->
+ <rect x="119" y="148" width="105" height="240" rx="10" fill="#0B3048"/>
+ <rect x="128" y="160" width="87" height="28" rx="7" fill="#665DE0" fill-opacity=".38"/>
+ <g stroke="#B5C6FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="139" y="169" width="10" height="9" rx="1"/><path d="M141 166h6M142 173h4"/>
+  <circle cx="144" cy="208" r="5"/><path d="M136 220c1-6 15-6 16 0"/>
+  <path d="M139 237h10v10h-10zM142 234h4"/>
+  <path d="M139 265h10M139 270h10M139 275h7"/>
+  <path d="M144 295v-8m-4 4h8m-7-7 6 6m-6 0 6-6"/>
  </g>
- <text x="244" y="157" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.4" fill="#758BA4">BUSINESS OVERVIEW</text>
- <text x="244" y="184" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#102B42">Good morning.</text>
- <text x="244" y="201" font-family="Arial,sans-serif" font-size="10" fill="#72869A">Here’s your business at a glance.</text>
- <!-- KPI cards -->
+ <g font-family="Arial,sans-serif" font-size="9.5" fill="#D1E0EC">
+  <text x="157" y="179" fill="#FFFFFF">Overview</text><text x="157" y="211">Enquiries</text><text x="157" y="243">Customers</text><text x="157" y="274">Projects</text><text x="157" y="299">Settings</text>
+ </g>
+ <!-- heading and status -->
+ <text x="244" y="160" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.5" fill="#73899D">BUSINESS OVERVIEW</text>
+ <text x="244" y="185" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#122F46">Good morning.</text>
+ <text x="244" y="202" font-family="Arial,sans-serif" font-size="10" fill="#71869A">Here’s what’s happening with your business.</text>
+ <!-- metric cards -->
  <g>
-  <rect x="244" y="214" width="112" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
-  <rect x="365" y="214" width="112" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
-  <rect x="486" y="214" width="126" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
-  <g font-family="Arial,sans-serif"><text x="256" y="232" font-size="8" fill="#71869A">NEW ENQUIRIES</text><text x="256" y="261" font-size="24" font-weight="700" fill="#122F46">128</text><text x="377" y="232" font-size="8" fill="#71869A">IN PROGRESS</text><text x="377" y="261" font-size="24" font-weight="700" fill="#122F46">46</text><text x="498" y="232" font-size="8" fill="#71869A">CONVERSION</text><text x="498" y="261" font-size="24" font-weight="700" fill="#122F46">68%</text></g>
-  <circle cx="341" cy="226" r="5" fill="#23C8AE"/><circle cx="462" cy="226" r="5" fill="#7A70F6"/><circle cx="597" cy="226" r="5" fill="#36B9D2"/>
+  <rect x="244" y="215" width="112" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+  <rect x="365" y="215" width="112" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+  <rect x="486" y="215" width="130" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+  <g font-family="Arial,sans-serif"><text x="256" y="233" font-size="8" fill="#71869A">NEW ENQUIRIES</text><text x="256" y="261" font-size="24" font-weight="700" fill="#122F46">128</text><text x="377" y="233" font-size="8" fill="#71869A">IN PROGRESS</text><text x="377" y="261" font-size="24" font-weight="700" fill="#122F46">46</text><text x="498" y="233" font-size="8" fill="#71869A">CONVERSION</text><text x="498" y="261" font-size="24" font-weight="700" fill="#122F46">68%</text></g>
+  <circle cx="341" cy="228" r="4.5" fill="#21BDAF"/><circle cx="462" cy="228" r="4.5" fill="#7C6BEE"/><circle cx="600" cy="228" r="4.5" fill="#35BBD2"/>
  </g>
- <!-- analytics and activity -->
- <rect x="244" y="289" width="224" height="91" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
- <text x="258" y="307" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#18364C">Enquiry activity</text>
- <path d="M260 356L292 340L322 346L353 322L383 331L414 312L451 320" stroke="#12B6AC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
- <path d="M260 356L292 340L322 346L353 322L383 331L414 312L451 320V366H260Z" fill="#12B6AC" opacity=".1"/>
- <rect x="478" y="289" width="134" height="91" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
- <text x="491" y="307" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#18364C">Project health</text>
- <circle cx="545" cy="343" r="22" stroke="#E2EAF0" stroke-width="8"/>
- <path d="M545 321a22 22 0 0 1 20 31" stroke="#6C68E9" stroke-width="8" stroke-linecap="round"/>
- <text x="545" y="347" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#18364C">26</text>
+ <!-- analytics cards -->
+ <rect x="244" y="291" width="226" height="92" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+ <text x="258" y="309" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#18364C">Enquiry activity</text>
+ <path d="M260 358L292 341L323 347L354 323L385 332L416 313L453 321" stroke="#10B5AA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M260 358L292 341L323 347L354 323L385 332L416 313L453 321V369H260Z" fill="#10B5AA" opacity=".1"/>
+ <rect x="480" y="291" width="136" height="92" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+ <text x="493" y="309" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#18364C">Project health</text>
+ <circle cx="548" cy="346" r="22" stroke="#E2EAF0" stroke-width="8"/>
+ <path d="M548 324a22 22 0 0 1 20 31" stroke="#6D68E9" stroke-width="8" stroke-linecap="round"/>
+ <text x="548" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#18364C">26</text>
 </g>
 <!-- laptop base -->
-<path d="M54 440H680L718 463Q723 469 704 473H29Q12 469 20 463Z" fill="#9CB3C3" stroke="#D0E1E9" stroke-width="1.5"/>
-<path d="M287 442H447L466 460H269Z" fill="#6D8298"/>
-<path d="M29 463H704" stroke="#FFFFFF" stroke-opacity=".5"/>
-<!-- floating mobile travel app -->
-<g transform="translate(542 183) rotate(7)">
- <rect x="0" y="0" width="154" height="292" rx="26" fill="#06172B" stroke="#A7BBCB" stroke-width="5"/>
- <rect x="9" y="11" width="136" height="270" rx="19" fill="url(#phone)"/>
- <rect x="54" y="18" width="46" height="5" rx="2.5" fill="#6F879B"/>
- <text x="22" y="53" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Trip Sarathi</text>
- <text x="22" y="70" font-family="Arial,sans-serif" font-size="8.5" fill="#A9C7D8">Your journey starts here</text>
- <rect x="20" y="86" width="114" height="77" rx="10" fill="#EAF4F7"/>
- <text x="30" y="105" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#183C52">FLIGHT SEARCH</text>
- <path d="M31 145Q74 100 123 139" stroke="#0AAEA7" stroke-width="3" stroke-linecap="round"/>
- <path d="M31 145H123" stroke="#AFC6D0"/>
- <g font-family="Arial,sans-serif" font-size="9" fill="#E0EEF5"><text x="24" y="190">✦  Flights</text><text x="24" y="216">⌂  Hotels</text><text x="24" y="242">◇  Holidays</text></g>
- <rect x="20" y="253" width="114" height="19" rx="8" fill="url(#teal)"/>
- <text x="77" y="266" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#073047">EXPLORE TRIPS</text>
+<path d="M42 459H690L721 478Q726 484 705 488H26Q8 484 18 478Z" fill="#9FB5C4" stroke="#D6E6EE" stroke-width="1.5"/>
+<path d="M292 461H443L462 478H273Z" fill="#71889A"/>
+<!-- floating mobile app -->
+<g transform="translate(548 190) rotate(7)">
+ <rect x="0" y="0" width="151" height="289" rx="26" fill="#06172B" stroke="#B3C4D0" stroke-width="5"/>
+ <rect x="9" y="11" width="133" height="267" rx="19" fill="url(#phone)"/>
+ <rect x="52" y="18" width="45" height="5" rx="2.5" fill="#718A9B"/>
+ <text x="21" y="52" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Trip Sarathi</text>
+ <text x="21" y="69" font-family="Arial,sans-serif" font-size="8.5" fill="#A9C7D8">Your journey starts here</text>
+ <rect x="19" y="85" width="112" height="78" rx="10" fill="#EAF4F7"/>
+ <text x="29" y="104" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#183C52">FLIGHT SEARCH</text>
+ <path d="M30 145Q72 100 120 139" stroke="#0AAEA7" stroke-width="3" stroke-linecap="round"/>
+ <path d="M30 145H120" stroke="#AFC6D0"/>
+ <g font-family="Arial,sans-serif" font-size="9" fill="#E0EEF5"><text x="23" y="190">✦  Flights</text><text x="23" y="216">⌂  Hotels</text><text x="23" y="242">◇  Holidays</text></g>
+ <rect x="19" y="252" width="112" height="18" rx="8" fill="url(#cyan)"/>
+ <text x="75" y="264" text-anchor="middle" font-family="Arial,sans-serif" font-size="7.5" font-weight="700" fill="#073047">EXPLORE TRIPS</text>
 </g>
-<!-- floating signal chips -->
-<g transform="translate(25 253)">
- <rect width="126" height="48" rx="12" fill="#121E43" stroke="#8291FF" stroke-opacity=".6"/>
- <circle cx="19" cy="24" r="7" fill="#7768FF" fill-opacity=".3"/><path d="M16 24l2 2 4-5" stroke="#C8C0FF" stroke-width="1.4" stroke-linecap="round"/>
- <text x="34" y="21" font-family="Arial,sans-serif" font-size="8" fill="#AFC0E5">CONNECTED</text><text x="34" y="33" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Business systems</text>
+<!-- floating quick insight cards -->
+<g transform="translate(20 246)">
+ <rect width="139" height="53" rx="13" fill="#111E42" stroke="#8D86FF" stroke-opacity=".7"/>
+ <rect x="11" y="11" width="30" height="30" rx="9" fill="url(#violet)" fill-opacity=".28"/>
+ <path d="M19 27l5-5 5 4 5-7" stroke="#C9C1FF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="49" y="23" font-family="Arial,sans-serif" font-size="7.5" letter-spacing=".7" fill="#AFC0E5">CONNECTED</text>
+ <text x="49" y="35" font-family="Arial,sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF">Business systems</text>
 </g>
-<g transform="translate(594 80)">
- <rect width="126" height="45" rx="12" fill="#102A40" stroke="#48D9D0" stroke-opacity=".55"/>
- <circle cx="17" cy="22" r="5" fill="#45E1CB"/><text x="30" y="19" font-family="Arial,sans-serif" font-size="8" fill="#9FC8D5">BUILT TO SCALE</text><text x="30" y="31" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#F3FAFF">Ready for growth</text>
+<g transform="translate(592 65)">
+ <rect width="130" height="48" rx="13" fill="#102A40" stroke="#55DCD2" stroke-opacity=".65"/>
+ <circle cx="17" cy="24" r="6" fill="#43E0CB" fill-opacity=".2" stroke="#63E7D7"/>
+ <path d="M14 24l2 2 4-5" stroke="#8AF4E5" stroke-width="1.4" stroke-linecap="round"/>
+ <text x="30" y="20" font-family="Arial,sans-serif" font-size="7.5" letter-spacing=".7" fill="#A6CBD4">BUILT TO SCALE</text>
+ <text x="30" y="32" font-family="Arial,sans-serif" font-size="9.5" font-weight="700" fill="#F3FAFF">Ready for growth</text>
 </g>
 </svg>
