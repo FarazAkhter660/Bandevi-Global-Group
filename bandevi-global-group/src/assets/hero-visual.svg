@@ -1,17 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" fill="none">
- <defs><linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dce9f0"/></linearGradient><linearGradient id="laptop" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dce6ed"/><stop offset="1" stop-color="#71899b"/></linearGradient><linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b3852"/><stop offset="1" stop-color="#061b2b"/></linearGradient></defs>
- <ellipse cx="380" cy="468" rx="330" ry="24" fill="#00101c" opacity=".38"/>
- <rect x="62" y="28" width="585" height="380" rx="22" fill="#071725" stroke="#8da7b7" stroke-width="5"/>
- <rect x="79" y="46" width="551" height="344" rx="11" fill="url(#screen)"/>
- <rect x="79" y="46" width="551" height="44" rx="10" fill="#0a2a40"/><rect x="79" y="79" width="551" height="11" fill="#0a2a40"/>
- <rect x="94" y="58" width="22" height="22" rx="6" fill="#13b9aa"/><text x="105" y="74" font-family="Arial" font-size="12" text-anchor="middle" fill="#fff" font-weight="bold">BG</text><text x="126" y="74" font-family="Arial" font-size="13" fill="#fff" font-weight="bold">BANDEVI CRM</text>
- <circle cx="590" cy="68" r="7" fill="#d6e3eb"/><circle cx="612" cy="68" r="7" fill="#d6e3eb"/>
- <rect x="93" y="105" width="110" height="270" rx="8" fill="#0b2b42"/>
- <g fill="#d5e6ef" font-family="Arial" font-size="12"><text x="110" y="133">▦ Dashboard</text><text x="110" y="168">✉ Enquiries</text><text x="110" y="203">♙ Leads</text><text x="110" y="238">▤ Projects</text><text x="110" y="273">▥ Reports</text><text x="110" y="308">⚙ Settings</text></g>
- <text x="224" y="127" font-family="Arial" font-size="20" font-weight="bold" fill="#10283c">Good morning!</text><text x="224" y="148" font-family="Arial" font-size="11" fill="#718393">Here’s what’s happening with your business.</text>
- <g><rect x="220" y="164" width="90" height="67" rx="8" fill="#fff" stroke="#d9e4eb"/><rect x="319" y="164" width="90" height="67" rx="8" fill="#fff" stroke="#d9e4eb"/><rect x="418" y="164" width="90" height="67" rx="8" fill="#fff" stroke="#d9e4eb"/><rect x="517" y="164" width="96" height="67" rx="8" fill="#fff" stroke="#d9e4eb"/><g font-family="Arial" fill="#142e43"><text x="232" y="188" font-size="10">New enquiries</text><text x="232" y="216" font-size="24" font-weight="bold">124</text><text x="331" y="188" font-size="10">Active leads</text><text x="331" y="216" font-size="24" font-weight="bold">48</text><text x="430" y="188" font-size="10">Projects</text><text x="430" y="216" font-size="24" font-weight="bold">26</text><text x="529" y="188" font-size="10">On-time delivery</text><text x="529" y="216" font-size="24" font-weight="bold">92%</text></g></g>
- <rect x="220" y="244" width="242" height="128" rx="8" fill="#fff" stroke="#d9e4eb"/><text x="235" y="265" font-family="Arial" font-size="12" font-weight="bold" fill="#163047">Enquiries trend</text><path d="M238 345 L272 327 L303 334 L337 300 L370 311 L402 282 L444 293" stroke="#0eafa6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M238 345 L272 327 L303 334 L337 300 L370 311 L402 282 L444 293 L444 356 L238 356Z" fill="#0eafa6" opacity=".10"/>
- <rect x="472" y="244" width="141" height="128" rx="8" fill="#fff" stroke="#d9e4eb"/><text x="486" y="265" font-family="Arial" font-size="12" font-weight="bold" fill="#163047">Project status</text><circle cx="542" cy="316" r="34" stroke="#dce7ed" stroke-width="12"/><path d="M542 282 A34 34 0 0 1 572 331" stroke="#0eafa6" stroke-width="12" stroke-linecap="round"/><text x="542" y="321" text-anchor="middle" font-family="Arial" font-size="19" font-weight="bold" fill="#163047">26</text>
- <path d="M42 408 H664 L720 443 Q727 451 706 457 H23 Q2 451 13 443Z" fill="url(#laptop)" stroke="#91a8b6" stroke-width="2"/><path d="M278 411 H432 L451 435 H259Z" fill="#8095a4"/>
- <g transform="translate(574 160) rotate(4)"><rect x="0" y="0" width="158" height="300" rx="25" fill="#071725" stroke="#a8bac5" stroke-width="4"/><rect x="9" y="12" width="140" height="276" rx="18" fill="url(#phone)"/><rect x="53" y="19" width="50" height="6" rx="3" fill="#526c7e"/><text x="22" y="55" font-family="Arial" font-size="13" font-weight="bold" fill="#fff">Trip Sarathi</text><text x="22" y="74" font-family="Arial" font-size="9" fill="#a9c7d7">Your journey starts here</text><rect x="20" y="91" width="118" height="78" rx="9" fill="#e9f3f6"/><path d="M34 145 Q75 98 124 142" stroke="#0a9f9b" stroke-width="3"/><path d="M34 145 L124 142" stroke="#b5c8d2"/><text x="28" y="113" font-family="Arial" font-size="10" fill="#14344b">✈  Flights</text><g font-family="Arial" font-size="10" fill="#dcecf2"><text x="23" y="198">⌂  Hotels</text><text x="23" y="227">▣  Holidays</text><text x="23" y="256">♙  Travellers</text></g><rect x="20" y="265" width="118" height="17" rx="8" fill="#0fb8a8"/><text x="79" y="277" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#06273b">SEARCH TRIPS</text></g>
+<defs>
+ <linearGradient id="frame" x1="90" y1="34" x2="630" y2="445" gradientUnits="userSpaceOnUse"><stop stop-color="#A7B8FF"/><stop offset=".48" stop-color="#5366B7"/><stop offset="1" stop-color="#45D8D0"/></linearGradient>
+ <linearGradient id="glass" x1="70" y1="25" x2="690" y2="470" gradientUnits="userSpaceOnUse"><stop stop-color="#1B2552"/><stop offset=".55" stop-color="#101B3B"/><stop offset="1" stop-color="#092D40"/></linearGradient>
+ <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F7FBFF"/><stop offset="1" stop-color="#DCEAF2"/></linearGradient>
+ <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9274FF"/><stop offset="1" stop-color="#4D70E9"/></linearGradient>
+ <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59F0D6"/><stop offset="1" stop-color="#12AFAF"/></linearGradient>
+ <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#153D59"/><stop offset="1" stop-color="#071B32"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="17"/></filter>
+ <filter id="softglow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+ <clipPath id="screenClip"><rect x="105" y="82" width="520" height="316" rx="13"/></clipPath>
+</defs>
+<!-- ambient light and orbit details -->
+<ellipse cx="380" cy="458" rx="285" ry="28" fill="#020817" opacity=".55" filter="url(#shadow)"/>
+<circle cx="612" cy="104" r="100" fill="#6E5BFF" opacity=".13" filter="url(#softglow)"/>
+<circle cx="125" cy="374" r="82" fill="#21D8CA" opacity=".11" filter="url(#softglow)"/>
+<path d="M54 150C94 47 210 8 326 28M548 466c90-26 145-92 158-173" stroke="#8195FF" stroke-opacity=".24" stroke-width="1.5" stroke-dasharray="4 9"/>
+<circle cx="54" cy="150" r="4" fill="#7A8BFF"/><circle cx="706" cy="293" r="4" fill="#53E2D2"/>
+<!-- main floating browser frame -->
+<rect x="70" y="38" width="594" height="402" rx="27" fill="#070F25" stroke="url(#frame)" stroke-width="4"/>
+<rect x="81" y="49" width="572" height="380" rx="19" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".12"/>
+<rect x="96" y="65" width="542" height="31" rx="9" fill="#FFFFFF" fill-opacity=".055"/>
+<circle cx="113" cy="80" r="4" fill="#FFBD75"/><circle cx="128" cy="80" r="4" fill="#63DCCB"/><circle cx="143" cy="80" r="4" fill="#8A7BFF"/>
+<rect x="166" y="74" width="240" height="12" rx="6" fill="#AFC2E6" fill-opacity=".18"/>
+<g clip-path="url(#screenClip)">
+ <rect x="105" y="82" width="520" height="316" fill="url(#screen)"/>
+ <rect x="105" y="82" width="520" height="45" fill="#0B2D43"/>
+ <rect x="122" y="94" width="23" height="23" rx="7" fill="url(#teal)"/>
+ <text x="133.5" y="110" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#05283A">BG</text>
+ <text x="155" y="110" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#F5FAFF">BANDEVI CRM</text>
+ <text x="550" y="109" font-family="Arial,sans-serif" font-size="9" fill="#A9C4D7">WORKSPACE</text>
+ <rect x="119" y="142" width="104" height="238" rx="10" fill="#0C3048"/>
+ <g font-family="Arial,sans-serif" font-size="10" fill="#C6DCE8">
+  <rect x="128" y="154" width="85" height="27" rx="7" fill="#6659D9" fill-opacity=".36"/>
+  <path d="M139 163h10v9h-10zM141 161h6" stroke="#A9B4FF" stroke-width="1.2"/>
+  <text x="155" y="172" fill="#FFFFFF">Overview</text>
+  <circle cx="144" cy="203" r="5" stroke="#8BAFC3"/><path d="M141 203h6M144 200v6" stroke="#8BAFC3"/>
+  <text x="155" y="206">Enquiries</text>
+  <path d="M139 229h10v8h-10zM141 227h6" stroke="#8BAFC3"/>
+  <text x="155" y="237">Customers</text>
+  <path d="M139 258h10v9h-10zM141 261h6M141 264h6" stroke="#8BAFC3"/>
+  <text x="155" y="266">Reports</text>
+  <circle cx="144" cy="294" r="5" stroke="#8BAFC3"/><path d="M144 287v3M144 298v3M137 294h3M148 294h3" stroke="#8BAFC3"/>
+  <text x="155" y="297">Settings</text>
+ </g>
+ <text x="244" y="157" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1.4" fill="#758BA4">BUSINESS OVERVIEW</text>
+ <text x="244" y="184" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#102B42">Good morning.</text>
+ <text x="244" y="201" font-family="Arial,sans-serif" font-size="10" fill="#72869A">Here’s your business at a glance.</text>
+ <!-- KPI cards -->
+ <g>
+  <rect x="244" y="214" width="112" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+  <rect x="365" y="214" width="112" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+  <rect x="486" y="214" width="126" height="63" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+  <g font-family="Arial,sans-serif"><text x="256" y="232" font-size="8" fill="#71869A">NEW ENQUIRIES</text><text x="256" y="261" font-size="24" font-weight="700" fill="#122F46">128</text><text x="377" y="232" font-size="8" fill="#71869A">IN PROGRESS</text><text x="377" y="261" font-size="24" font-weight="700" fill="#122F46">46</text><text x="498" y="232" font-size="8" fill="#71869A">CONVERSION</text><text x="498" y="261" font-size="24" font-weight="700" fill="#122F46">68%</text></g>
+  <circle cx="341" cy="226" r="5" fill="#23C8AE"/><circle cx="462" cy="226" r="5" fill="#7A70F6"/><circle cx="597" cy="226" r="5" fill="#36B9D2"/>
+ </g>
+ <!-- analytics and activity -->
+ <rect x="244" y="289" width="224" height="91" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+ <text x="258" y="307" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#18364C">Enquiry activity</text>
+ <path d="M260 356L292 340L322 346L353 322L383 331L414 312L451 320" stroke="#12B6AC" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+ <path d="M260 356L292 340L322 346L353 322L383 331L414 312L451 320V366H260Z" fill="#12B6AC" opacity=".1"/>
+ <rect x="478" y="289" width="134" height="91" rx="9" fill="#FFFFFF" stroke="#D7E4EC"/>
+ <text x="491" y="307" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#18364C">Project health</text>
+ <circle cx="545" cy="343" r="22" stroke="#E2EAF0" stroke-width="8"/>
+ <path d="M545 321a22 22 0 0 1 20 31" stroke="#6C68E9" stroke-width="8" stroke-linecap="round"/>
+ <text x="545" y="347" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#18364C">26</text>
+</g>
+<!-- laptop base -->
+<path d="M54 440H680L718 463Q723 469 704 473H29Q12 469 20 463Z" fill="#9CB3C3" stroke="#D0E1E9" stroke-width="1.5"/>
+<path d="M287 442H447L466 460H269Z" fill="#6D8298"/>
+<path d="M29 463H704" stroke="#FFFFFF" stroke-opacity=".5"/>
+<!-- floating mobile travel app -->
+<g transform="translate(542 183) rotate(7)">
+ <rect x="0" y="0" width="154" height="292" rx="26" fill="#06172B" stroke="#A7BBCB" stroke-width="5"/>
+ <rect x="9" y="11" width="136" height="270" rx="19" fill="url(#phone)"/>
+ <rect x="54" y="18" width="46" height="5" rx="2.5" fill="#6F879B"/>
+ <text x="22" y="53" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Trip Sarathi</text>
+ <text x="22" y="70" font-family="Arial,sans-serif" font-size="8.5" fill="#A9C7D8">Your journey starts here</text>
+ <rect x="20" y="86" width="114" height="77" rx="10" fill="#EAF4F7"/>
+ <text x="30" y="105" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#183C52">FLIGHT SEARCH</text>
+ <path d="M31 145Q74 100 123 139" stroke="#0AAEA7" stroke-width="3" stroke-linecap="round"/>
+ <path d="M31 145H123" stroke="#AFC6D0"/>
+ <g font-family="Arial,sans-serif" font-size="9" fill="#E0EEF5"><text x="24" y="190">✦  Flights</text><text x="24" y="216">⌂  Hotels</text><text x="24" y="242">◇  Holidays</text></g>
+ <rect x="20" y="253" width="114" height="19" rx="8" fill="url(#teal)"/>
+ <text x="77" y="266" text-anchor="middle" font-family="Arial,sans-serif" font-size="8" font-weight="700" fill="#073047">EXPLORE TRIPS</text>
+</g>
+<!-- floating signal chips -->
+<g transform="translate(25 253)">
+ <rect width="126" height="48" rx="12" fill="#121E43" stroke="#8291FF" stroke-opacity=".6"/>
+ <circle cx="19" cy="24" r="7" fill="#7768FF" fill-opacity=".3"/><path d="M16 24l2 2 4-5" stroke="#C8C0FF" stroke-width="1.4" stroke-linecap="round"/>
+ <text x="34" y="21" font-family="Arial,sans-serif" font-size="8" fill="#AFC0E5">CONNECTED</text><text x="34" y="33" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Business systems</text>
+</g>
+<g transform="translate(594 80)">
+ <rect width="126" height="45" rx="12" fill="#102A40" stroke="#48D9D0" stroke-opacity=".55"/>
+ <circle cx="17" cy="22" r="5" fill="#45E1CB"/><text x="30" y="19" font-family="Arial,sans-serif" font-size="8" fill="#9FC8D5">BUILT TO SCALE</text><text x="30" y="31" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#F3FAFF">Ready for growth</text>
+</g>
 </svg>
