@@ -546,3 +546,13 @@ body { background: #080a1d; }
   -webkit-text-fill-color: transparent !important;
   filter: drop-shadow(0 5px 18px #675bff2b);
 }
+
+/* Home page: match "A partner you can rely on" to the industry headline gradient. */
+.about-heading h2 {
+  color: #ffffff !important;
+  background: linear-gradient(95deg, #ffffff 0%, #b7b0ff 48%, #69dff0 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 5px 18px #675bff2b);
+}
