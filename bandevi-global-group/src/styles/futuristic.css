@@ -525,3 +525,13 @@ body { background: #080a1d; }
   .process-step { padding: 17px 16px; }
   .services-detail-showcase .offering-card { min-height: 235px; }
 }
+
+/* Match the final CTA headline to the site's white-violet-cyan gradient headings. */
+.cta h2 {
+  color: #f6f7ff;
+  background: linear-gradient(95deg, #ffffff 0%, #b7b0ff 48%, #69dff0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 5px 18px #675bff2b);
+}
