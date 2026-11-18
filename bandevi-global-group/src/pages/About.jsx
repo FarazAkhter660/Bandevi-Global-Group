@@ -90,10 +90,6 @@ export default function About() {
               </div>
             ))}
           </div>
-          <p className="disclaimer">
-            Verify all statistics, company records, office locations and project
-            claims with current company-approved information before launch.
-          </p>
         </div>
       </section>
     </>
