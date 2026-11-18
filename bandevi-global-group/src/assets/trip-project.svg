@@ -1,1 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360"><defs><linearGradient id="a" x2="1" y2="1"><stop stop-color="#dff6f7"/><stop offset="1" stop-color="#9ccbd9"/></linearGradient></defs><rect width="640" height="360" rx="20" fill="url(#a)"/><circle cx="520" cy="75" r="48" fill="#fff" opacity=".5"/><path d="M0 270 Q140 190 270 260 T640 220 V360 H0Z" fill="#5d9eb0" opacity=".5"/><path d="M385 115 l150 -54 -60 76 -32 7 -17 51 -18 -41 -55 10 32 -28Z" fill="#fff" stroke="#234c64" stroke-width="5" stroke-linejoin="round"/><text x="38" y="55" font-family="Arial" font-size="22" font-weight="bold" fill="#0b5360">Trip Sarathi</text><text x="38" y="132" font-family="Arial" font-size="36" font-weight="bold" fill="#102d44">Compare flights.</text><text x="38" y="175" font-family="Arial" font-size="36" font-weight="bold" fill="#102d44">Travel smarter.</text><rect x="38" y="218" width="230" height="48" rx="12" fill="#0a344b"/><text x="153" y="248" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold" fill="#fff">Explore flights →</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+<defs>
+ <linearGradient id="bg" x1="24" y1="8" x2="610" y2="360" gradientUnits="userSpaceOnUse"><stop stop-color="#11183B"/><stop offset=".55" stop-color="#17285A"/><stop offset="1" stop-color="#07384A"/></linearGradient>
+ <linearGradient id="glow" x1="80" y1="25" x2="560" y2="330" gradientUnits="userSpaceOnUse"><stop stop-color="#8067FF"/><stop offset="1" stop-color="#36D9E8"/></linearGradient>
+ <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".16"/><stop offset="1" stop-color="#B7DFFF" stop-opacity=".05"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<rect width="640" height="360" rx="22" fill="url(#bg)"/>
+<circle cx="500" cy="62" r="100" fill="#4D8FFF" opacity=".18" filter="url(#shadow)"/>
+<circle cx="120" cy="300" r="110" fill="#27D7D1" opacity=".12" filter="url(#shadow)"/>
+<path d="M0 285C110 235 168 330 278 280s205-12 362-91v171H0v-75Z" fill="#28C6D3" opacity=".12"/>
+<g opacity=".16" stroke="#A6C8FF"><path d="M0 90H640M0 150H640M0 210H640M0 270H640"/><path d="M80 0V360M160 0V360M240 0V360M320 0V360M400 0V360M480 0V360M560 0V360"/></g>
+<rect x="28" y="24" width="584" height="312" rx="18" fill="#0A1029" fill-opacity=".58" stroke="#A8C5FF" stroke-opacity=".28"/>
+<rect x="48" y="44" width="34" height="34" rx="11" fill="url(#glow)"/><path d="M58 63l8-13 5 8 7 2-12 9-2-7-6 1Z" fill="white"/>
+<text x="94" y="59" fill="#F5F7FF" font-family="Arial,sans-serif" font-size="17" font-weight="700">TRIP SARATHI</text><text x="94" y="76" fill="#A8B9E0" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">TRAVEL, REIMAGINED</text>
+<rect x="470" y="48" width="120" height="27" rx="13.5" fill="#FFFFFF" fill-opacity=".08" stroke="#FFFFFF" stroke-opacity=".14"/><circle cx="486" cy="61" r="4" fill="#49DFC9"/><text x="497" y="65" fill="#DCE8FF" font-family="Arial,sans-serif" font-size="10">Explore journeys</text>
+<text x="54" y="126" fill="#A8B9E0" font-family="Arial,sans-serif" font-size="10" letter-spacing="2">YOUR NEXT JOURNEY STARTS HERE</text>
+<text x="54" y="166" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="32" font-weight="700">Find your way</text><text x="54" y="202" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="32" font-weight="700">to somewhere new.</text>
+<text x="56" y="226" fill="#B7C6E8" font-family="Arial,sans-serif" font-size="11">Compare routes, discover destinations and travel smarter.</text>
+<rect x="54" y="250" width="210" height="48" rx="12" fill="url(#glow)"/><text x="76" y="279" fill="#07142C" font-family="Arial,sans-serif" font-size="13" font-weight="700">Explore destinations</text><path d="M237 267l8 7-8 7" stroke="#07142C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(340 110)">
+ <circle cx="112" cy="83" r="78" fill="#37CFE0" opacity=".10"/><circle cx="112" cy="83" r="58" stroke="#7BE5E8" stroke-opacity=".24" stroke-dasharray="3 7"/>
+ <path d="M26 116C60 42 124 35 184 75" stroke="#70DDE8" stroke-width="2" stroke-dasharray="5 7" stroke-linecap="round"/>
+ <circle cx="26" cy="116" r="6" fill="#53E0D1"/><circle cx="184" cy="75" r="6" fill="#8E80FF"/>
+ <path d="M105 69l72-29-26 42-20 5-12 29-11-24-31 5 20-18 8-10Z" fill="#F5FAFF" stroke="#8FC9FF" stroke-width="2.5" stroke-linejoin="round"/>
+ <rect x="58" y="160" width="110" height="42" rx="10" fill="url(#panel)" stroke="#B5D9FF" stroke-opacity=".3"/><text x="72" y="177" fill="#9FB5DE" font-family="Arial,sans-serif" font-size="8">POPULAR ROUTE</text><text x="72" y="192" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="11" font-weight="700">DEL → BOM</text>
+</g>
+</svg>

@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420"><defs><linearGradient id="o" x2="1" y2="1"><stop stop-color="#d8e9ed"/><stop offset="1" stop-color="#8eb5bd"/></linearGradient></defs><rect width="800" height="420" rx="24" fill="url(#o)"/><rect x="40" y="40" width="720" height="340" rx="16" fill="#f5f8f6"/><rect x="70" y="75" width="660" height="230" rx="10" fill="#b5d4d2"/><path d="M70 75 H730 V110 H70Z" fill="#0b3449"/><g fill="#f6d78d"><circle cx="95" cy="92" r="5"/><circle cx="115" cy="92" r="5"/><circle cx="135" cy="92" r="5"/></g><g fill="#17394a"><rect x="115" y="155" width="170" height="115" rx="8"/><rect x="325" y="145" width="170" height="125" rx="8"/><rect x="535" y="155" width="150" height="115" rx="8"/></g><g fill="#e7f1f2"><rect x="128" y="168" width="144" height="82" rx="4"/><rect x="338" y="158" width="144" height="92" rx="4"/><rect x="548" y="168" width="124" height="82" rx="4"/></g><path d="M85 310 H715" stroke="#718e98" stroke-width="8"/><g fill="#0b3449"><rect x="170" y="310" width="14" height="42"/><rect x="390" y="310" width="14" height="42"/><rect x="610" y="310" width="14" height="42"/></g><g fill="#fff" opacity=".8"><rect x="150" y="350" width="55" height="8" rx="4"/><rect x="370" y="350" width="55" height="8" rx="4"/><rect x="590" y="350" width="55" height="8" rx="4"/></g><text x="400" y="395" text-anchor="middle" font-family="Arial" font-size="16" fill="#17394a">A collaborative workspace</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" fill="none">
+<defs>
+ <linearGradient id="bg" x1="35" y1="12" x2="760" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#101638"/><stop offset=".52" stop-color="#172657"/><stop offset="1" stop-color="#073B4B"/></linearGradient>
+ <linearGradient id="edge" x1="90" y1="45" x2="690" y2="375" gradientUnits="userSpaceOnUse"><stop stop-color="#8873FF"/><stop offset=".52" stop-color="#4A9FFF"/><stop offset="1" stop-color="#3BE0D1"/></linearGradient>
+ <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#273B70"/><stop offset="1" stop-color="#14274B"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7BF4E3"/><stop offset="1" stop-color="#39BBD5"/></linearGradient>
+ <filter id="glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="13"/></filter>
+</defs>
+<rect width="800" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="665" cy="74" r="112" fill="#645CFF" opacity=".17" filter="url(#glow)"/>
+<circle cx="132" cy="360" r="115" fill="#19D6C6" opacity=".13" filter="url(#glow)"/>
+<g stroke="#9BB9FF" stroke-opacity=".12"><path d="M0 84H800M0 168H800M0 252H800M0 336H800"/><path d="M80 0V420M160 0V420M240 0V420M320 0V420M400 0V420M480 0V420M560 0V420M640 0V420M720 0V420"/></g>
+<rect x="28" y="24" width="744" height="372" rx="22" fill="#08132E" fill-opacity=".62" stroke="url(#edge)" stroke-opacity=".48"/>
+<rect x="52" y="48" width="696" height="42" rx="12" fill="#FFFFFF" fill-opacity=".055" stroke="#FFFFFF" stroke-opacity=".1"/>
+<rect x="68" y="60" width="18" height="18" rx="6" fill="url(#edge)"/><path d="M73 70l4-6 4 6-4 4-4-4Z" fill="#08132E"/>
+<text x="98" y="75" fill="#F2F5FF" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">BANDEVI / CONNECTED DELIVERY</text>
+<g transform="translate(590 61)"><circle cx="0" cy="8" r="4" fill="#51E3C9"/><text x="12" y="12" fill="#AFC4E7" font-family="Arial,sans-serif" font-size="10">TEAMWORK IN MOTION</text></g>
+<text x="70" y="133" fill="#AFC0E7" font-family="Arial,sans-serif" font-size="10" letter-spacing="2.4">PEOPLE  ·  PROCESS  ·  TECHNOLOGY</text>
+<text x="70" y="169" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="27" font-weight="700">One connected team.</text>
+<text x="70" y="196" fill="#B7C8E9" font-family="Arial,sans-serif" font-size="13">Ideas become useful digital experiences.</text>
+<g transform="translate(70 224)">
+ <rect width="190" height="112" rx="13" fill="url(#screen)" stroke="#9FB9FF" stroke-opacity=".28"/>
+ <rect x="14" y="14" width="32" height="32" rx="10" fill="#806BFF" fill-opacity=".24" stroke="#9A8CFF" stroke-opacity=".6"/>
+ <path d="M23 30h14M30 23v14" stroke="#CFC9FF" stroke-width="2" stroke-linecap="round"/>
+ <text x="14" y="68" fill="#F1F4FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">Discover</text>
+ <text x="14" y="87" fill="#9EB2D8" font-family="Arial,sans-serif" font-size="10">Understand the goal</text>
+</g>
+<g transform="translate(278 224)">
+ <rect width="190" height="112" rx="13" fill="url(#screen)" stroke="#9FB9FF" stroke-opacity=".28"/>
+ <rect x="14" y="14" width="32" height="32" rx="10" fill="#31CFC2" fill-opacity=".18" stroke="#55E3D6" stroke-opacity=".65"/>
+ <path d="M22 31l6 6 11-14" stroke="#75F1DF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="14" y="68" fill="#F1F4FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">Collaborate</text>
+ <text x="14" y="87" fill="#9EB2D8" font-family="Arial,sans-serif" font-size="10">Build with clarity</text>
+</g>
+<g transform="translate(486 224)">
+ <rect width="190" height="112" rx="13" fill="url(#screen)" stroke="#9FB9FF" stroke-opacity=".28"/>
+ <rect x="14" y="14" width="32" height="32" rx="10" fill="#399BFF" fill-opacity=".18" stroke="#6AB8FF" stroke-opacity=".65"/>
+ <path d="M22 37V27l8-5 8 5v10M27 37v-7h6v7" stroke="#8DCAFF" stroke-width="1.8" stroke-linejoin="round"/>
+ <text x="14" y="68" fill="#F1F4FF" font-family="Arial,sans-serif" font-size="12" font-weight="700">Deliver</text>
+ <text x="14" y="87" fill="#9EB2D8" font-family="Arial,sans-serif" font-size="10">Create lasting value</text>
+</g>
+<path d="M260 280H278M468 280H486" stroke="url(#edge)" stroke-width="2.5" stroke-linecap="round"/><circle cx="269" cy="280" r="4" fill="#7C8BFF"/><circle cx="477" cy="280" r="4" fill="#55E2D5"/>
+<g transform="translate(690 356)"><circle r="19" fill="#FFFFFF" fill-opacity=".06" stroke="#78DCD9" stroke-opacity=".6"/><path d="M-7 0h14M1-7l7 7-7 7" stroke="#8BEDE1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
