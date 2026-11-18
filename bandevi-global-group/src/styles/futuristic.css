@@ -363,3 +363,196 @@ body { background: #080a1d; }
 @media (max-width: 420px) {
   .about-facts { grid-template-columns: 1fr; }
 }
+
+/* Consistent futuristic treatment for service delivery and industry cards. */
+.split-feature > div:first-child h2 {
+  color: #f6f7ff;
+  background: linear-gradient(95deg, #fff 0%, #b7b0ff 48%, #69dff0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 5px 18px #675bff2b);
+}
+.split-feature > div:first-child > p {
+  color: #b4bddb;
+}
+.split-feature > div:first-child .eyebrow {
+  color: #9e9aff;
+}
+.split-feature > div:first-child .eyebrow > span {
+  background: linear-gradient(90deg, #7d68ff, #3bd7e8);
+  box-shadow: 0 0 12px #6e61ff80;
+}
+.process-list {
+  display: grid;
+  gap: 12px;
+  border-left: 0;
+  padding-left: 0;
+}
+.process-step {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  align-items: start;
+  gap: 15px;
+  min-height: 92px;
+  padding: 19px 20px;
+  border: 1px solid #a3a6ff30;
+  border-left: 3px solid #6f69ff;
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #6557df20, transparent 55%),
+    linear-gradient(145deg, #1b2045, #10162f);
+  box-shadow: inset 0 1px #ffffff10, 0 12px 28px #02061745;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+.process-step:nth-child(2) { border-left-color: #39b9ed; }
+.process-step:nth-child(3) { border-left-color: #37d1bd; }
+.process-step:nth-child(4) { border-left-color: #b28aff; }
+.process-step:hover {
+  transform: translateY(-4px);
+  border-color: #8e8aff85;
+  box-shadow: 0 18px 36px #02061765, 0 0 20px #665aff20;
+}
+.process-step > span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: #d9d7ff;
+  font-weight: 800;
+  font-size: 12px;
+  background: linear-gradient(145deg, #6656dc55, #1f9bb655);
+  border: 1px solid #a9a4ff55;
+  box-shadow: 0 0 15px #6556dc22;
+}
+.process-step h3 {
+  margin: 1px 0 6px;
+  color: #f1f3ff;
+  font-size: 16px;
+}
+.process-step p {
+  margin: 0;
+  color: #aeb9d8;
+  line-height: 1.6;
+  font-size: 13px;
+}
+.industry-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.industry-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 230px;
+  padding: 25px 24px;
+  border: 1px solid #a3a6ff30;
+  border-top: 2px solid #6d64ff;
+  border-radius: 15px;
+  color: #f3f4ff;
+  background:
+    radial-gradient(ellipse at 100% 0%, #6557df22, transparent 55%),
+    linear-gradient(145deg, #1b2045, #10162f);
+  box-shadow: inset 0 1px #ffffff10, 0 14px 32px #02061750;
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.industry-detail:nth-child(3n + 2) { border-top-color: #39b9ed; }
+.industry-detail:nth-child(3n) { border-top-color: #37d1bd; }
+.industry-detail > svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 18px;
+  color: #69d9ec;
+  filter: drop-shadow(0 0 9px #39c9e966);
+}
+.industry-detail h3 {
+  margin: 0 0 9px;
+  color: #f3f5ff;
+  font-size: 17px;
+  line-height: 1.35;
+}
+.industry-detail p {
+  margin: 0 0 18px;
+  color: #aeb9d8;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.industry-detail .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  color: #78dce9;
+  border-color: #78dce955;
+}
+.industry-detail:hover {
+  transform: translateY(-5px);
+  border-color: #8e8aff8a;
+  box-shadow: 0 20px 42px #02061770, 0 0 24px #665aff20;
+  background:
+    radial-gradient(ellipse at 100% 0%, #6557df32, transparent 55%),
+    linear-gradient(145deg, #202650, #121a38);
+}
+.services-detail-showcase .offering-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 270px;
+  padding: 26px 24px;
+  border-radius: 15px;
+}
+.services-detail-showcase .offering-card .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  color: #78dce9;
+  border-color: #78dce955;
+}
+.services-detail-showcase .offering-card .offering-icon {
+  color: #69d9ec;
+  filter: drop-shadow(0 0 9px #39c9e966);
+}
+@media (max-width: 900px) {
+  .industry-detail-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process-step { min-height: 0; }
+}
+@media (max-width: 600px) {
+  .industry-detail-grid { grid-template-columns: 1fr; }
+  .industry-detail { min-height: 205px; }
+  .process-list { gap: 10px; }
+  .process-step { padding: 17px 16px; }
+  .services-detail-showcase .offering-card { min-height: 235px; }
+}
+
+/* Match the final CTA headline to the site's white-violet-cyan gradient headings. */
+.cta h2 {
+  color: #f6f7ff;
+  background: linear-gradient(95deg, #ffffff 0%, #b7b0ff 48%, #69dff0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 5px 18px #675bff2b);
+}
+
+/* Use the exact same gradient headline treatment on Contact and About pages. */
+.contact-grid > div:first-child > h2,
+.about-page-grid .section-heading h2 {
+  color: #ffffff !important;
+  background: linear-gradient(95deg, #ffffff 0%, #b7b0ff 48%, #69dff0 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 5px 18px #675bff2b);
+}
+
+/* Home page: match "A partner you can rely on" to the industry headline gradient. */
+.about-heading h2 {
+  color: #ffffff !important;
+  background: linear-gradient(95deg, #ffffff 0%, #b7b0ff 48%, #69dff0 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 5px 18px #675bff2b);
+}
