@@ -630,3 +630,35 @@ body { background: #080a1d; }
   .about .value-grid { grid-template-columns: 1fr; }
   .about .value-item { min-height: 112px; }
 }
+
+
+/* Keep project artwork cleanly clipped to the card silhouette. */
+.portfolio--editorial .project-card,
+.work-editorial .case-card {
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 20px;
+}
+.portfolio--editorial .project-image,
+.work-editorial .case-image {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 19px 19px 0 0;
+  background: #101a35;
+}
+.portfolio--editorial .project-image img,
+.work-editorial .case-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: inherit;
+}
+@media (max-width: 760px) {
+  .portfolio--editorial .project-card,
+  .work-editorial .case-card { border-radius: 17px; }
+  .portfolio--editorial .project-image,
+  .work-editorial .case-image { border-radius: 16px 16px 0 0; }
+}
