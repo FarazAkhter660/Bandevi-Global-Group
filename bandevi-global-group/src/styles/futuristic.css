@@ -751,3 +751,51 @@ body { background: #080a1d; }
     font-size: 11px;
   }
 }
+
+
+/* Hard override for contact controls: keep focused, typed and autofilled fields
+   on the same dark surface with readable light text in Chromium browsers. */
+.contact-section .contact-form input,
+.contact-section .contact-form input:hover,
+.contact-section .contact-form input:focus,
+.contact-section .contact-form input:active,
+.contact-section .contact-form input:autofill,
+.contact-section .contact-form input:-webkit-autofill,
+.contact-section .contact-form input:-webkit-autofill:hover,
+.contact-section .contact-form input:-webkit-autofill:focus,
+.contact-section .contact-form textarea,
+.contact-section .contact-form textarea:hover,
+.contact-section .contact-form textarea:focus,
+.contact-section .contact-form select,
+.contact-section .contact-form select:hover,
+.contact-section .contact-form select:focus {
+  background: #0b1028 !important;
+  background-color: #0b1028 !important;
+  background-image: none !important;
+  color: #f4f5ff !important;
+  -webkit-text-fill-color: #f4f5ff !important;
+  caret-color: #f4f5ff !important;
+  color-scheme: dark;
+}
+
+.contact-section .contact-form input::placeholder,
+.contact-section .contact-form textarea::placeholder {
+  color: #8993b5 !important;
+  -webkit-text-fill-color: #8993b5 !important;
+  opacity: 1;
+}
+
+.contact-section .contact-form input:focus,
+.contact-section .contact-form textarea:focus,
+.contact-section .contact-form select:focus {
+  border-color: #5fcbeb !important;
+  outline: 0;
+  box-shadow: 0 0 0 3px #48bde82a, 0 0 18px #48bde81c !important;
+}
+
+.contact-section .contact-form input:-webkit-autofill,
+.contact-section .contact-form input:-webkit-autofill:hover,
+.contact-section .contact-form input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #0b1028 inset !important;
+  box-shadow: 0 0 0 1000px #0b1028 inset !important;
+}
