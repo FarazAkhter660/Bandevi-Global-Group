@@ -662,3 +662,92 @@ body { background: #080a1d; }
   .portfolio--editorial .project-image,
   .work-editorial .case-image { border-radius: 16px 16px 0 0; }
 }
+
+
+/* Mobile contact-page polish: keep the enquiry form clear of floating actions
+   and preserve the dark input surface when Chrome applies autofill. */
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover,
+.contact-form input:-webkit-autofill:focus,
+.contact-form textarea:-webkit-autofill,
+.contact-form textarea:-webkit-autofill:hover,
+.contact-form textarea:-webkit-autofill:focus,
+.contact-form select:-webkit-autofill {
+  -webkit-text-fill-color: #f4f5ff !important;
+  caret-color: #f4f5ff;
+  -webkit-box-shadow: 0 0 0 1000px #0b1028 inset !important;
+  box-shadow: 0 0 0 1000px #0b1028 inset !important;
+  border: 1px solid #5fcbeb;
+  transition: background-color 9999s ease-out 0s;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  color-scheme: dark;
+}
+
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form select:focus-visible {
+  outline: 2px solid #5fcbeb;
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  /* The contact details already include an inline WhatsApp link. Hide fixed
+     chat launchers on this page so they never cover form fields or its CTA. */
+  body:has(.contact-form) .ai-advisor,
+  body:has(.contact-form) .whatsapp-float {
+    display: none !important;
+  }
+
+  .contact-grid {
+    gap: 26px;
+  }
+
+  .contact-form {
+    width: 100%;
+    min-width: 0;
+    padding: 20px 17px 22px;
+    border-radius: 18px;
+    gap: 16px;
+  }
+
+  .contact-form .form-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .contact-form label {
+    min-width: 0;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    min-width: 0;
+    min-height: 54px;
+    padding: 14px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+
+  .contact-form button {
+    width: 100%;
+    min-height: 56px;
+    justify-content: center;
+  }
+
+  .contact-form .form-hint {
+    overflow-wrap: anywhere;
+    font-size: 11px;
+  }
+}
